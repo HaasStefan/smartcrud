@@ -1,1 +1,12 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+persons:
+<br>
+<br>
+<pre>{{ persons() | json }}</pre>
+
+
+<button crudCreate [entity]="{
+id: '4',
+      name: 'John Doe',
+            age: 30
+        }">create
+</button>
